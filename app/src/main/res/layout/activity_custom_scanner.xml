@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomBarcodeScannerActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <io.scanbot.sdk.ui.camera.ScanbotCameraXView
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:finder_view_id="@id/my_finder_overlay" />
+
+    <io.scanbot.sdk.ui.camera.FinderOverlayView
+        android:id="@+id/my_finder_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/btn_flash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:text="Flash" />
+
+    <Button
+        android:id="@+id/btn_cam_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:text="Cam Switch" />
+
+</FrameLayout>
